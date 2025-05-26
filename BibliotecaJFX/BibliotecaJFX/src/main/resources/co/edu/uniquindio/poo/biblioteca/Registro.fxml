@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.biblioteca.viewController.RegistroViewController">
+   <children>
+      <Label layoutX="92.0" layoutY="42.0" text="Registro" textFill="#157b2d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="105.0" fitWidth="88.0" layoutX="84.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Imagenes/Uniqlog.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtbVolver" layoutX="366.0" layoutY="64.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+      <TextField fx:id="TxfCorreo" layoutX="300.0" layoutY="105.0" />
+      <TextArea fx:id="TxfMensaje" layoutX="266.0" layoutY="174.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="TxfAsunto" layoutX="300.0" layoutY="137.0" />
+      <Label layoutX="238.0" layoutY="109.0" text="Correo:" />
+      <Label layoutX="238.0" layoutY="141.0" text="Asunto:" />
+      <Label layoutX="217.0" layoutY="192.0" text="Mensaje:" />
+      <Button fx:id="BtbEnviar" layoutX="497.0" layoutY="188.0" mnemonicParsing="false" onAction="#OnEnviar" text="Enviar" />
+   </children>
+</AnchorPane>

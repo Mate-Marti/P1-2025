@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.biblioteca.viewController.SeguridadAutenticacionViewController">
+   <children>
+      <Label layoutX="58.0" layoutY="54.0" text="Seguridad Autenticacion" textFill="#248c35">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="98.0" fitWidth="82.0" layoutX="44.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Imagenes/Uniqlog.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="150.0" layoutX="23.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Imagenes/pngtree-credentials-png-image_841209-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TvEmpleado" layoutX="186.0" layoutY="183.0" prefHeight="200.0" prefWidth="150.0">
+        <columns>
+          <TableColumn fx:id="TbcNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="TbcCedula" prefWidth="75.0" text="Cedula" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TxfNombre" layoutX="380.0" layoutY="54.0" />
+      <TextField fx:id="TxfCedula" layoutX="381.0" layoutY="98.0" />
+      <Label layoutX="316.0" layoutY="59.0" text="Nombre:" />
+      <Label layoutX="316.0" layoutY="102.0" text="Cedula:" />
+      <Button fx:id="BtbAgregar" layoutX="479.0" layoutY="197.0" mnemonicParsing="false" onAction="#OnAgregar" text="Agregar" />
+      <Button fx:id="BtbVolver" layoutX="478.0" layoutY="249.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+   </children>
+</AnchorPane>

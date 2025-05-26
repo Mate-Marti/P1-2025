@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.biblioteca.viewController.EstudianteViewController">
+   <children>
+      <Button fx:id="BtbPrestamos" layoutX="441.0" layoutY="89.0" mnemonicParsing="false" onAction="#OnPrestamos" text="Prestamos" />
+      <Button fx:id="BtbDevoluciones" layoutX="441.0" layoutY="157.0" mnemonicParsing="false" onAction="#OnDevoluciones" text="Devoluciones" />
+      <Label fx:id="LblBienvenidoEstu" layoutX="33.0" layoutY="49.0" prefHeight="43.0" prefWidth="270.0" text="Bienvenido Estudiante" textFill="#0d631a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="87.0" layoutX="56.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Imagenes/Uniqlog.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtbVolver" layoutX="63.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+   </children>
+</AnchorPane>

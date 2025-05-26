@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.biblioteca.viewController.BibliotecaViewController">
+    <children>
+        <SplitPane dividerPositions="0.5159574468085106" orientation="VERTICAL" prefHeight="566.0" prefWidth="429.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="428.0">
+                    <children>
+                        <Pane layoutX="34.0" layoutY="19.0" prefHeight="249.0" prefWidth="360.0" style="-fx-border-image-width: 1px;">
+                            <effect>
+                                <Blend />
+                            </effect>
+                            <children>
+                                <Label id="1" fx:id="LblBievenidos" layoutX="55.0" layoutY="14.0" prefHeight="35.0" prefWidth="279.0" text="Bienvenido a la biblioteca UQ" textFill="#2b6b36">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label id="2" fx:id="LblCedula" layoutX="41.0" layoutY="161.0" prefHeight="17.0" prefWidth="64.0" text="Cedula:">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label id="3" fx:id="LblNombre" layoutX="38.0" layoutY="195.0" text="Nombre:">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="41.0" layoutY="124.0">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <TextField id="4" fx:id="txtCedula" layoutX="118.0" layoutY="162.0" prefHeight="25.0" prefWidth="194.0" />
+                                <TextField id="5" fx:id="txtNombre" layoutX="118.0" layoutY="196.0" prefHeight="25.0" prefWidth="194.0" />
+                        <ImageView fx:id="imagenUniversidad" fitHeight="81.0" fitWidth="155.0" layoutX="147.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Imagenes/Uniqlog.jpg" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="241.0">
+               <children>
+                  <Button fx:id="BtbAdministrador" layoutX="162.0" layoutY="89.0" mnemonicParsing="false" onAction="#onAdministradorPantalla" text="Administrador" />
+                          <Button id="6" fx:id="BtbProfesor" layoutX="55.0" layoutY="85.0" mnemonicParsing="false" onAction="#OnProfesorPantalla" text="Profesor" />
+                  <Button fx:id="BtbVisitante" layoutX="309.0" layoutY="89.0" mnemonicParsing="false" onAction="#OnVisitantePantalla" text="Visitante" />
+                          <Button id="7" fx:id="BtbEstudiante" layoutX="111.0" layoutY="146.0" mnemonicParsing="false" onAction="#OnEstudiantePantalla" text="Estudiante" />
+                  <Button fx:id="BtbBibliotecario" layoutX="227.0" layoutY="144.0" mnemonicParsing="false" onAction="#OnBibliotecarioPantalla" text="Bibliotecario" />
+                  <Label fx:id="LblQueEres" layoutX="144.0" layoutY="23.0" prefHeight="35.0" prefWidth="127.0" text="¿Que eres?" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
