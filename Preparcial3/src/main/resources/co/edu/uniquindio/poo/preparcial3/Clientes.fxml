@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" style="-fx-padding:15;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.preparcial3.viewController.ClientesViewController">
+    <HBox spacing="15">
+        <VBox spacing="5">
+            <Label text="Documento" />
+            <TextField fx:id="txtDocumento">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+            <Label text="Nombre" />
+            <TextField fx:id="txtNombre">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+            <Label text="Teléfono" />
+            <TextField fx:id="txtTelefono">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+            <Label text="Correo" />
+            <TextField fx:id="txtCorreo">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+        </VBox>
+        <VBox spacing="10">
+            <Button fx:id="btnGuardar" text="Guardar">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button fx:id="btnActualizar" text="Actualizar">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button fx:id="btnEliminar" text="Eliminar">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        </VBox>
+    </HBox>
+    <TableView fx:id="tablaClientes">
+        <columns>
+            <TableColumn fx:id="colDocumento" text="Documento" />
+            <TableColumn fx:id="colNombre" text="Nombre" />
+            <TableColumn fx:id="colTelefono" text="Teléfono" />
+            <TableColumn fx:id="colCorreo" text="Correo" />
+        </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+    </TableView>
+</VBox>

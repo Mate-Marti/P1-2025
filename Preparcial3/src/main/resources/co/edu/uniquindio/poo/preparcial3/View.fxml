@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="co.edu.uniquindio.poo.preparcial3.viewController.ViewController">
+    <left>
+        <VBox spacing="10" style="-fx-background-color:#333;-fx-padding:10;">
+            <Label style="-fx-text-fill:white;-fx-font-size:18;" text="MENÚ" />
+            <Button fx:id="btnClientes" prefWidth="120" text="Clientes">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button fx:id="btnVentas" prefWidth="120" text="Ventas">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button fx:id="btnRegistro" prefWidth="120" text="Registro Ventas">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contenido" />
+    </center>
+</BorderPane>
