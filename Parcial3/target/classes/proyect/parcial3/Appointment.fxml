@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" prefHeight="700" prefWidth="1500" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyect.parcial3.ViewController.AppointmentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Asignación de Citas">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <HBox spacing="15.0" alignment="CENTER_LEFT">
+            <children>
+                <VBox spacing="5.0">
+                    <Label text="Paciente:" />
+                    <ComboBox fx:id="comboPatient" prefWidth="150.0" promptText="Seleccione..." />
+                </VBox>
+                <VBox spacing="5.0">
+                    <Label text="Médico:" />
+                    <ComboBox fx:id="comboDoctor" prefWidth="150.0" promptText="Seleccione..." />
+                </VBox>
+                <VBox spacing="5.0">
+                    <Label text="Fecha:" />
+                    <DatePicker fx:id="datePicker" prefWidth="120.0" />
+                </VBox>
+                <VBox spacing="5.0">
+                    <Label text="Precio:" />
+                    <TextField fx:id="txtPrice" prefWidth="80.0" promptText="0" />
+                </VBox>
+                <Button mnemonicParsing="false" onAction="#scheduleAppointment" style="-fx-background-color: #2c3e50;" text="Agendar Cita" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+
+        <TableView fx:id="tableAppointments" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colDate" text="Fecha" />
+                <TableColumn fx:id="colPatient" text="Paciente" />
+                <TableColumn fx:id="colDoctor" text="Médico Asignado" />
+                <TableColumn fx:id="colPrice" text="Precio" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>
