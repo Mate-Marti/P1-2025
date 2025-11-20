@@ -1,0 +1,9 @@
+CLIENT;6171;Samuel;Alzate;Samuel78;2007-10-10;2070
+CLIENT;7659;Alejandro;Garcia;AlejandroG;1977-07-30;7659
+CLIENT;1094924271;Luciana;Acosta Escobar;Luci._.esc;2009-11-13;YHLQMDLG
+ADMIN;E-003;Valentina;Giraldo;Mona;2004-07-14;140704;E-003;7500000.0
+ADMIN;1092;Juan;Ramirez;administrator;2007-09-12;Cr7juanjo8;E-001;9000000.0
+CLIENT;1094882232;Monica;Londono;Monic;1986-07-25;250786
+CLIENT;9736;Ana;Gomez;client;1990-05-15;contrasena
+CASHIER;E-004;Mariana;Forero;MarianaF;2006-01-25;mariana1;E-004;4000000.0
+CLIENT;6174;Silvana;Yepes;Silvana123;2008-07-22;silvajuan
