@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefWidth="400.0" spacing="20.0" style="-fx-font-family: 'Times New Roman';-fx-background-color: #f4f4f4; -fx-padding: 25;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyect.bankproject.Controller.TransferDialogController">
+
+    <Label text="Realizar Transferencia">
+        <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+        </font>
+    </Label>
+
+    <GridPane alignment="TOP_CENTER" hgap="10.0" nodeOrientation="LEFT_TO_RIGHT" vgap="10.0">
+        <Label text="Cuenta Destino:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+        <TextField fx:id="accountNumberField" promptText="Ej: 123-456-01" GridPane.columnIndex="1" GridPane.rowIndex="0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="amountField" promptText="Ej: 50000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+   
+        <Label text="Monto:" GridPane.rowIndex="1">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <Label fx:id="errorLabel" textFill="red" />
+
+    <Button fx:id="confirmButton" mnemonicParsing="false" style="-fx-font-family: 'Times New Roman';-fx-background-color: #0078d4; -fx-text-fill: white; -fx-font-weight: bold;" text="Confirmar Transferencia">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+
+</VBox>
