@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/24.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.poo.pfbanco.viewController.MonitoreoTransaccionesViewController">
+   <children>
+      <Label layoutX="120" layoutY="30"
+             text="Monitoreo de Transacciones"
+             textFill="#5b9954">
+         <font><Font size="40.0" /></font>
+      </Label>
+
+      <TableView fx:id="tablaTransacciones" layoutX="25.0" layoutY="100.0"
+                 prefHeight="350.0" prefWidth="750.0">
+         <columns>
+            <TableColumn fx:id="colId" text="ID Transacción" prefWidth="120.0" />
+            <TableColumn fx:id="colFecha" text="Fecha" prefWidth="120.0" />
+            <TableColumn fx:id="colMonto" text="Monto" prefWidth="100.0" />
+            <TableColumn fx:id="colEstado" text="Estado" prefWidth="100.0" />
+            <TableColumn fx:id="colOrigen" text="Cliente Origen (ID)" prefWidth="150.0" />
+            <TableColumn fx:id="colDestino" text="Cliente Destino (ID)" prefWidth="150.0" />
+         </columns>
+      </TableView>
+
+      <Button layoutX="350.0" layoutY="460.0"
+              mnemonicParsing="false"
+              onAction="#volver" text="Volver" />
+   </children>
+</AnchorPane>
