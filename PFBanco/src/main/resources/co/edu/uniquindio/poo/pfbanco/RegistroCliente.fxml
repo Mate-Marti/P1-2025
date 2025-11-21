@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/24.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.poo.pfbanco.viewController.RegistroClienteViewController">
+
+   <children>
+
+      <Label layoutX="140" layoutY="20"
+             text="Registro Cliente"
+             textFill="#5b9954">
+         <font><Font size="32"/></font>
+      </Label>
+
+      <Label layoutX="60" layoutY="100" text="ID:"/>
+      <TextField fx:id="txtId" layoutX="160" layoutY="95" prefWidth="200"/>
+
+      <Label layoutX="60" layoutY="140" text="Nombre:"/>
+      <TextField fx:id="txtNombre" layoutX="160" layoutY="135" prefWidth="200"/>
+
+      <Label layoutX="60" layoutY="180" text="Usuario:"/>
+      <TextField fx:id="txtUsuario" layoutX="160" layoutY="175" prefWidth="200"/>
+
+      <Label layoutX="60" layoutY="220" text="Contraseña:"/>
+      <PasswordField fx:id="txtContrasena" layoutX="160" layoutY="215" prefWidth="200"/>
+
+      <Label layoutX="60" layoutY="260" text="Tipo de Cuenta:"/>
+      <ComboBox fx:id="comboTipoCuenta" layoutX="160" layoutY="255" prefWidth="200" promptText="Seleccione tipo"/>
+
+      <Label layoutX="60" layoutY="300" text="Saldo Inicial:"/>
+      <TextField fx:id="txtSaldoInicial" layoutX="160" layoutY="295" prefWidth="200" promptText="0.0"/>
+
+      <Label layoutX="60" layoutY="340" text="Tasa Interés (Ahorro):"/>
+      <TextField fx:id="txtTasaInteres" layoutX="190" layoutY="335" prefWidth="170" promptText="0.05 (5%)"/>
+
+      <Label layoutX="60" layoutY="380" text="Límite Sobregiro (Corriente):"/>
+      <TextField fx:id="txtLimiteSobregiro" layoutX="240" layoutY="375" prefWidth="120" promptText="100000.0"/>
+
+      <Button fx:id="btnGuardar" layoutX="160" layoutY="440" mnemonicParsing="false" onAction="#guardar" text="Guardar"/>
+      <Button fx:id="btnActualizar" layoutX="240" layoutY="440" mnemonicParsing="false" onAction="#actualizar" text="Actualizar" />
+      <Button fx:id="btnEliminar" layoutX="320" layoutY="440" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+
+      <Button fx:id="btnVolver" layoutX="500" layoutY="490" mnemonicParsing="false" onAction="#volver" text="Volver" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.pfbanco.viewController.GestionEmpleadosViewController">
+
+   <children>
+
+      <Label layoutX="180" layoutY="20" style="-fx-font-size: 28px; -fx-text-fill: #4b9950;" text="Gestión de Empleados" />
+
+      <TableView fx:id="tablaCajeros" layoutX="25" layoutY="70" prefHeight="250" prefWidth="600">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="120" text="ID" />
+            <TableColumn fx:id="colNombre" prefWidth="200" text="Nombre" />
+            <TableColumn fx:id="colUsuario" prefWidth="157.39996337890625" text="Usuario" />
+            <TableColumn fx:id="colContrasena" prefWidth="119.20004272460938" text="Contraseña" />
+         </columns>
+      </TableView>
+
+      <TextField fx:id="txtId" layoutX="25" layoutY="340" prefWidth="120" promptText="ID" />
+      <TextField fx:id="txtNombre" layoutX="155" layoutY="340" prefWidth="150" promptText="Nombre" />
+      <TextField fx:id="txtUsuario" layoutX="315" layoutY="340" prefWidth="150" promptText="Usuario" />
+      <PasswordField fx:id="txtContrasena" layoutX="475" layoutY="340" prefWidth="150" promptText="Contraseña" />
+
+      <Button fx:id="btnCrear" layoutX="25" layoutY="380" prefWidth="80" text="Crear" />
+      <Button fx:id="btnEliminar" layoutX="110" layoutY="380" prefWidth="80" text="Eliminar" />
+      <Button fx:id="btnVolver" layoutX="524.0" layoutY="380.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+
+   </children>
+</AnchorPane>

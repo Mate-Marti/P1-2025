@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.pfbanco.viewController.CajeroViewController">
+   <children>
+      <Label fx:id="lblTitulo" layoutX="243.0" layoutY="83.0" prefHeight="58.0" prefWidth="114.0" text="Cajero" textFill="#5b9954">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInfo" layoutX="231.0" layoutY="157.0" text="Por favor inicie sesión:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtContrasenaCajero" layoutX="226.0" layoutY="248.0" promptText="Contraseña" />
+      <TextField fx:id="txtUsuarioCajero" layoutX="227.0" layoutY="200.0" promptText="Usuario" />
+      <Button fx:id="btnEntrar" layoutX="217.0" layoutY="310.0" mnemonicParsing="false" onAction="#abrirCajeroMenu" text="Entrar" />
+      <Button fx:id="btnVolver" layoutX="332.0" layoutY="310.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <Label layoutX="141.0" layoutY="177.0" text="Prueba creando una cuenta desde el administrador (gestion empleados)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
